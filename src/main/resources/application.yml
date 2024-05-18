@@ -1,0 +1,21 @@
+spring.application.name=LibraryManagmentSystem
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password:
+    url: jdbc:postgresql://localhost:5432/employees
+    username: your_username
+    password: your_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    propetries:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format-sql: true
+    show-sql: true
